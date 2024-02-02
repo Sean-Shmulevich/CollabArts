@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sign Up</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your existing stylesheet here -->
+</head>
+<body>
+   
+    <nav class="top_nav">
+        <div>
+            <a href="index.html">
+            <img src="Logo.png" alt="Logo" width="50">
+        </div>
+        <ul class="nav_bar" id="navBar">
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="get_involved.html">GET INVOLVED</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="menu_icon" onclick="toggleNav()">
+            <img src="menu.svg" alt="Menu" width="30">
+        </a>
+    </nav>
+
+    <form action="#" method="post">
+        <h2>Sign Up for Our Email List</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Sign Up</button>
+    </form>
+
+</body>
+</html>
