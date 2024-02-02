@@ -67,7 +67,6 @@ h2 {
 .video-container {
     position: relative;
     width: 100%;
-    max-width: 1000px;
     padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
 }
 
@@ -126,13 +125,74 @@ h2 {
 
 
 
+/* ABOUT US */
+
+.overview {
+    display: flex;
+    margin: auto;
+    width: 100%; /* Make it take full width of the screen */
+    max-width: 1000px; /* Set a max-width for larger screens */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left_about {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+}
+
+.right_about {
+    flex: 1; /* Takes up 1 part of the flex container */
+    padding: 20px; /* Adjust padding as needed */
+    justify-content: center;
+    display: flex;
+}
+
+.right_about img {
+    max-width: 100%;
+}
 
 
+.board {
+    text-align: center;
+    padding: 20px;
+}
 
+.board_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
 
+.board_intro {
+    background-color: #aa90f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
 
+.board_intro img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
 
+.board_intro p {
+    margin: 10px 0;
+    color: black;
+}
 
+/* Add responsive styles as needed */
+@media (max-width: 768px) {
+    .board_grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* New styles for the form */
 form {
