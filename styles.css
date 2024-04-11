@@ -239,6 +239,7 @@ button:hover {
 }
 
 .menu_icon {
+  z-index: 5;
   display: none;
 }
 
