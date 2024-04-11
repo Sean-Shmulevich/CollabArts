@@ -44,6 +44,22 @@
                 margin: 5%;
             }
         }
+
+        home_screen {}
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        canvas {
+            position: absolute;
+            height: 100vh;
+            min-height: 100vh;
+            max-height: 100vh;
+            z-index: 10;
+            top: 0;
+        }
     </style>
 </head>
 
@@ -51,25 +67,28 @@
 
 
 
-    <nav class="top_nav">
-        <div>
-            <a href="index.html">
-                <img src="Logo.png" alt="Logo" width="50">
-        </div>
-        <ul class="nav_bar" id="navBar">
-            <li><a href="about.html">ABOUT US</a></li>
-            <!-- <li><a href="events.html">EVENTS</a></li> -->
-            <li><a href="get_involved.html">GET INVOLVED</a></li>
-        </ul>
-        <a href="javascript:void(0);" class="menu_icon" onclick="toggleNav()">
-            <img src="menu.svg" alt="Menu" width="30">
-        </a>
-    </nav>
+    <div style="max-height: 100vh;min-height: 100vh;height: 100vh;">
 
-    <header>
-        <div id="particles-js"></div>
-        <h1 class="text-shadow">COLLAB <br> ARTS</h1>
-    </header>
+        <nav class="top_nav">
+            <div>
+                <a href="index.html">
+                    <img src="Logo.png" alt="Logo" width="50">
+            </div>
+            <ul class="nav_bar" id="navBar">
+                <li><a href="about.html">ABOUT US</a></li>
+                <!-- <li><a href="events.html">EVENTS</a></li> -->
+                <li><a href="get_involved.html">GET INVOLVED</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="menu_icon" onclick="toggleNav()">
+                <img src="menu.svg" alt="Menu" width="30">
+            </a>
+        </nav>
+
+        <header>
+            <div id="particles-js"></div>
+            <h1 class="text-shadow">COLLAB <br> ARTS</h1>
+        </header>
+    </div>
 
     <div class="featured_work">
         <h2>Featured</h2>
@@ -114,10 +133,10 @@
     <!-- <div class="featured_work">
         <h2>Current Projects</h2>
         <p class="description">Your description goes here.</p>
-    </div>
+    </div> -->
 
 
-    <div class="slideshow-container">
+    <!-- <div class="slideshow-container">
         <h2>Recent Projects</h2>
         <div class="mySlides fade">
             <img src="image1.jpg" alt="Image 1">
