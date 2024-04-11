@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collab Arts</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .featured_content {
+            display: flex;
+            justify-content: center;
+            line-height: 25px;
+        }
+
+        .author-tag {
+            text-align: right;
+            margin-bottom: -5px;
+            margin-top: -35px;
+            font-size: 0.6rem;
+        }
+
+        .featured_instagram {
+            width: 500px;
+            max-width: 85vw;
+            border-radius: 25px;
+            border-color: #aa90f9;
+            border-width: 5px;
+            border-style: solid;
+        }
+
+        .featured_card {
+            max-width: 90vw;
+            width: 600px;
+            padding: 15px;
+            border-radius: 25px;
+            height: fit-content;
+            background-color: #6333f4;
+        }
+
+        @media screen and (max-width: 600px) {
+            .featured_content {
+                margin: 5%;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
 
@@ -13,11 +54,11 @@
     <nav class="top_nav">
         <div>
             <a href="index.html">
-            <img src="Logo.png" alt="Logo" width="50">
+                <img src="Logo.png" alt="Logo" width="50">
         </div>
         <ul class="nav_bar" id="navBar">
             <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="events.html">EVENTS</a></li>
+            <!-- <li><a href="events.html">EVENTS</a></li> -->
             <li><a href="get_involved.html">GET INVOLVED</a></li>
         </ul>
         <a href="javascript:void(0);" class="menu_icon" onclick="toggleNav()">
@@ -31,13 +72,46 @@
     </header>
 
     <div class="featured_work">
-        <h2>Featured Work</h2>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vf_b7blo_yE?si=Ajvq36KNH5QtpKch" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
-        <p class="description">Your description goes here.</p>
+        <h2>Featured</h2>
+        <div class="featured_content">
+            <div class="featured_card">
+                <img class="featured_instagram" src="ecoJamImage.jpg" alt="">
+                <p class="description">Collab Arts At Pitt presents Eco-Village,<br /><br /> A
+                    sustainability-oriented
+                    district at
+                    the Rhythm and Threads @rhythm.and.threads festival.<br /><br /> Eco-Jam is a creative reuse
+                    festival featuring
+                    live street art, thrift & art pop-ups, performances, skate and music. Come celebrate collaborative
+                    arts and making art from junk with us! RSVP now via link in our bio.
+
+                    <br /><br />
+                    FAQs:
+                    <br />
+                    When and where?
+                    <br />
+                    Date: April 12th
+                    <br />
+                    Time: 12pm - 6pm
+                    <br />
+                    Location: South Craig Street, Oakland, PA
+                    <br /><br />
+
+                    What’s the Agenda?<br />
+                    Thrift & Art Pop-Ups: 12:00 pm - 6:00 pm<br />
+                    Live Artist Jam: 12:00 pm - 4:00 pm<br />
+                    Skate Jam: 12:00 pm - 2:00 pm<br />
+                    DJ + Dance Jam: 2:00 pm - 3:00 pm<br />
+                    Exhibition Dance Battle & Performance Showcase: 3:00 pm - 4:00 pm<br />
+                    Vocal Performances: 4:00 - 6:00 pm<br />
+                    <br />
+
+                </p>
+                <p class="author-tag"> Flyer design by @jenny_mci</p>
+            </div>
+        </div>
     </div>
 
-    <div class="featured_work">
+    <!-- <div class="featured_work">
         <h2>Current Projects</h2>
         <p class="description">Your description goes here.</p>
     </div>
@@ -56,13 +130,14 @@
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
+    </div> -->
 
 
 
 
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
