@@ -38,16 +38,21 @@ p,
 a {
   font-family: vcr, sans-serif;
 }
+html {
+  -webkit-text-size-adjust: 100%;
+}
 
 body {
   font-family: Arial, sans-serif;
+  min-height: 100vh;
   background-color: #212020;
   overflow-x: hidden;
   color: white;
   margin: 0;
-  width: 100vw;
-  max-width: 100vw;
-  min-width: 100vw;
+  width: 100%;
+}
+iframe {
+  width: fit-content;
 }
 
 hr {
@@ -107,6 +112,9 @@ header {
   max-height: 100vh;
   min-height: 100vh;
   height: 100vh;
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
 }
 #particles-js {
   max-width: 100vw;
@@ -283,13 +291,7 @@ nav div {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-}
-
-.featured_video div {
-  padding-inline: 20px;
-}
-.featured_video div:last-child {
-  padding-inline: 20px;
+  padding-inline: 15px;
 }
 
 .featured_items > div:last-child {
@@ -300,12 +302,12 @@ nav div {
   display: none;
   justify-content: flex-start;
   margin-top: 20px;
-  padding-inline: 45px;
+  padding-inline: 12px;
   line-height: 1.5;
 }
 .featured_items > div {
-  padding-inline: 25px;
-  border-radius: 25px;
+  padding-inline: 20px;
+  border-radius: 20px;
   margin-inline: 5px;
   border-color: rgba(255, 255, 249, 0.4);
   border-width: 5px;
@@ -527,6 +529,13 @@ nav div {
     margin: 5%;
   }
 }
+@media screen and (max-width: 493px) {
+  h1 {
+    font-size: 35px !important;
+    margin-bottom: 95px;
+    margin-right: 18px;
+  }
+}
 @media only screen and (max-width: 980px) {
   .featured_video {
     border-color: rgba(255, 255, 249, 0.4);
@@ -551,25 +560,28 @@ nav div {
   }
   .featured_card {
     flex-direction: column;
-    padding-inline: 25px;
+    margin: 0;
+    padding: 0;
+    padding-inline: 20px;
+    width: calc(100% - 40px);
   }
   .featured_items {
     flex-direction: column;
-    padding: 0;
   }
   .featured_items > div:last-child {
     width: unset;
   }
   .featured_items div {
     margin-block: 10px;
-    margin-inline: 25px;
   }
   .featured_instagram {
     margin-inline: auto;
     width: 80vw;
   }
   .featured_video {
+    /* padding-inline: 20px; */
     flex-direction: column-reverse;
+    margin-inline: auto;
   }
   .about_home {
     flex-direction: column;
