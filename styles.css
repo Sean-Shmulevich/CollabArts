@@ -688,6 +688,10 @@ nav div {
     max-width: 50vw;
   }
 
+  iframe {
+    margin-bottom: 15px;
+  }
+
   header {
     margin-bottom: 300px;
   }
