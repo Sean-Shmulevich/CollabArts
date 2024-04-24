@@ -94,13 +94,6 @@ label {
   text-align: left;
 }
 
-iframe {
-  width: 100%;
-  min-height: 300px;
-  margin: 20px 20px 0 20px;
-  height: 100%;
-}
-
 input {
   width: 100%;
   padding: 10px;
@@ -277,6 +270,13 @@ nav div {
   margin-inline: auto;
 }
 
+.featured_work iframe {
+  width: 100%;
+  min-height: 300px;
+  margin: 20px 20px 0 20px;
+  height: 100%;
+}
+
 .featured_work h2 {
   margin-bottom: 0px;
 }
@@ -330,7 +330,7 @@ nav div {
 
 .featured_items {
   display: none;
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 20px;
   padding-inline: 45px;
   line-height: 1.5;
@@ -343,8 +343,9 @@ nav div {
 .featured_items > div {
   padding-inline: 20px;
   border-radius: 20px;
-  margin-inline: 5px;
   border-color: rgba(255, 255, 249, 0.4);
+  margin-left: 20px;
+
   border-width: 5px;
   border-style: solid;
 }
@@ -352,6 +353,7 @@ nav div {
 .featured_items p {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+  margin-bottom: -10px;
   font-weight: 400;
   font-style: normal;
 }
@@ -635,12 +637,13 @@ nav div {
   }
   .featured_items {
     flex-direction: column;
-    padding-inline: 14px;
+    padding-inline: 18px;
   }
   .featured_items > div:last-child {
     width: unset;
   }
   .featured_items div {
+    margin-left: 0px;
     margin-bottom: 20px;
   }
   .featured_instagram {
@@ -688,7 +691,7 @@ nav div {
     max-width: 50vw;
   }
 
-  iframe {
+  .featured_work iframe {
     margin-bottom: 15px;
   }
 
