@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collab Arts</title>
     <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
+    <link rel="icon" href="Logo.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js"> </script>
+    <script src="track.js"></script>
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
 
 </head>
 
@@ -14,7 +20,7 @@
 
 
 
-    <div style="max-height: 100vh;min-height: 100vh;height: 100vh;">
+    <div class="homepage_viewport">
 
         <nav class="top_nav">
             <div>
@@ -26,18 +32,17 @@
                 <li><a href="about.html">
 
                         <span>[</span>
-                        <span class="bracket_text">ABOUT US</span>
+                        <span>ABOUT US</span>
                         <span>]</span>
                     </a></li>
                 <li><a href="about.html">
                         <span>[</span>
-                        <span class="bracket_text">PROJECTS</span>
+                        <span>PROJECTS</span>
                         <span>]</span>
                     </a></li>
-                <!-- <li><a href="events.html">EVENTS</a></li> -->
                 <li><a href="get_involved.html">
                         <span>[</span>
-                        <span class="bracket_text">
+                        <span>
                             GET INVOLVED
                         </span>
                         <span>]</span>
@@ -51,13 +56,14 @@
 
         <header>
             <div id="particles-js"></div>
-            <div class="circleBorder text-shadow mouse-font wide-letters">
+            <div class="titleBorder wide-letters">
 
-                <h1 class="">COLLAB <br> ARTS</h1>
+                <h1 class="text-shadow ">COLLAB <br> ARTS</h1>
             </div>
         </header>
 
-        <span class="open_modal">
+        <!-- Class name is important here so i can find it in JS -->
+        <span id="open_modal">
             Try our Interactive Demo
         </span>
     </div>
@@ -161,20 +167,17 @@
     </div>
 
 
-    <div style="display: none">
+    <div class="hidden">
 
-        <div class="mb10">
-            <div id="updatenote" class="updatenote mt10"> loading model ..</div>
+        <div>
+            <div id="updatenote"> loading model ..</div>
         </div>
-        <video class="videobox canvasbox" autoplay="autoplay" id="myvideo" style="display: none;"></video>
+        <video class="videobox" autoplay="autoplay" id="myvideo"></video>
         <canvas id="canvas_track" class="border canvasbox"></canvas>
 
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js"> </script>
+
     </div>
 
-    <script src="track.js"></script>
-    <script src="script.js"></script>
 
     <!-- Modal, only shown when interactive demo is shown -->
     <div class="modal_instructions">
@@ -198,7 +201,7 @@
         <ol>
             <li>Click the "Enable Camera" button to start the camera.
                 <br>
-                <span style="font-size: .65rem;">Your browser will also prompt you to enable camera access</span>
+                <span>Your browser will also prompt you to enable camera access</span>
             </li>
             <li>Hold your hand about 3-5 feet away from your webcam and slowly move your hand</li>
             <li>You will notice that the animation can be controlled with the movement of your hand</li>

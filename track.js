@@ -122,7 +122,6 @@ window.addEventListener('load', async () => {
     handTrack.load(modelParams).then((lmodel) => {
         // detect objects in the image.
         model = lmodel;
-        console.log(model);
         updateNote.innerText = "Loaded Model!";
         trackButton.disabled = false;
     });
