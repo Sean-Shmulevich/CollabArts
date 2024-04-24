@@ -32,6 +32,7 @@ a {
 body {
   font-family: Arial, sans-serif;
   background-color: #212020;
+  overflow-x: hidden;
   color: white;
   margin: 0;
 }
@@ -42,6 +43,10 @@ nav {
   align-items: right;
   padding: 20px;
   background-color: #212020;
+}
+
+nav div {
+  z-index: 20;
 }
 
 .nav_bar {
@@ -130,10 +135,6 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  border-color: rgba(255, 255, 249, 0.4);
-  border-radius: 20px;
-  border-width: 5px;
-  border-style: solid;
 }
 .featured_items > div:last-child {
   width: 100%;
@@ -427,6 +428,13 @@ button:hover {
   z-index: 100;
 }
 
+.img_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .close_modal {
   cursor: pointer;
   font-size: 1.5rem;
@@ -436,8 +444,21 @@ button:hover {
   text-align: right;
 }
 
+body {
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 100vw;
+}
+
 .close_modal:hover {
   color: red;
+}
+
+hr {
+  width: calc(
+    100% - 100px
+  ); /* Subtract total horizontal margin from 100% width */
+  margin-inline: 50px;
 }
 
 .featured_items > div {
@@ -588,10 +609,27 @@ body {
   text-shadow: 0 0 7px #aa90f9;
   text-align: center;
 }
-
+@media only screen and (max-width: 980px) {
+  .featured_video {
+    border-color: rgba(255, 255, 249, 0.4);
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
+  }
+}
 @media only screen and (max-width: 768px) {
   .menu_icon {
     display: block;
+  }
+  .nav_bar {
+    width: calc(100% - 50px) !important;
+    margin-inline: 25px;
+    padding-block: 10px;
+    margin-top: 10px;
+    border-color: rgba(255, 255, 249, 0.4);
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
   }
   .featured_card {
     flex-direction: column;
