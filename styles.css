@@ -154,7 +154,6 @@ h2 {
 .featured_work {
   text-align: center;
   margin-inline: auto;
-  margin: 45px;
 }
 
 .featured_work h2 {
@@ -388,6 +387,8 @@ button:hover {
 .featured_more_info {
   font-size: 0.9rem;
   text-align: right;
+  margin-right: 50px;
+  margin-top: 2px;
 }
 
 .featured_work a,
@@ -402,8 +403,8 @@ button:hover {
   display: none;
   justify-content: flex-start;
   margin-top: 20px;
+  padding-inline: 45px;
   line-height: 1.5;
-  width: 100%;
 }
 
 #trackbutton {
@@ -433,6 +434,10 @@ button:hover {
   margin-right: -10px;
   margin-bottom: -32px;
   text-align: right;
+}
+
+.close_modal:hover {
+  color: red;
 }
 
 .featured_items > div {
@@ -472,6 +477,7 @@ button:hover {
   border-radius: 8px;
   width: fit-content;
   margin-inline: auto;
+  padding-inline: 50px;
   /* 
   border-color: #aa90f9;
   border-width: 3px;
@@ -589,16 +595,18 @@ body {
   }
   .featured_card {
     flex-direction: column;
+    padding-inline: 25px;
   }
   .featured_items {
     flex-direction: column;
+    padding: 0;
   }
   .featured_items > div:last-child {
     width: unset;
   }
   .featured_items div {
     margin-block: 10px;
-    margin-inline: 0;
+    margin-inline: 25px;
   }
   .featured_instagram {
     margin-inline: auto;
