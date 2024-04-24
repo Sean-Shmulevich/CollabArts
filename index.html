@@ -24,28 +24,22 @@
             <ul class="nav_bar" id="navBar">
                 <li><a href="about.html">
 
-                        <span class="bracket_left">[</span>
                         <span>[</span>
                         <span class="bracket_text">ABOUT US</span>
                         <span>]</span>
-                        <span class="bracket_right">]</span>
                     </a></li>
                 <li><a href="about.html">
-                        <span class="bracket_left">[</span>
                         <span>[</span>
                         <span class="bracket_text">PROJECTS</span>
                         <span>]</span>
-                        <span class="bracket_right">]</span>
                     </a></li>
                 <!-- <li><a href="events.html">EVENTS</a></li> -->
                 <li><a href="get_involved.html">
-                        <span class="bracket_left">[</span>
                         <span>[</span>
                         <span class="bracket_text">
                             GET INVOLVED
                         </span>
                         <span>]</span>
-                        <span class="bracket_right">]</span>
 
                     </a></li>
             </ul>
@@ -56,7 +50,8 @@
 
         <header>
             <div id="particles-js"></div>
-            <div class="text-shadow mouse-font wide-letters">
+            <div class="circleBorder text-shadow mouse-font wide-letters">
+
                 <h1 class="">COLLAB <br> ARTS</h1>
             </div>
         </header>
@@ -97,23 +92,34 @@
     </div>
     <div class="featured_work">
         <h2 class="mouse-font">Featured</h2>
-        <a href="/project.html" class="featured_card">
+        <div href="/project.html" class="featured_card">
             <img class="featured_instagram" src="ecoJamImage.jpg" alt="">
-            <div>
-                <h3>Promo</h3>
-                <iframe width="460" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ZbfPZqxdnnjJkVQS"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <!-- <p class="description">Collab Arts At Pitt presents Eco-Village,<br /><br /> A
-                sustainability-oriented
-                district at
-                the Rhythm and Threads @rhythm.and.threads festival.<br /><br /> Eco-Jam is a creative reuse
-                festival featuring
-                live street art, thrift & art pop-ups, performances, skate and music. Come celebrate collaborative
-                arts and making art from junk with us! RSVP now via link in our bio.
+            <div class="featured_video">
+                <div>
 
+                    <h3 class="mouse-font underline">Promo</h3>
+                    <iframe width="460" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ZbfPZqxdnnjJkVQS"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+
+                <div>
+
+                    <h3 class="mouse-font underline">Description</h3>
+                    <p class="description">Collab Arts At Pitt presents Eco-Village,<br /><br /> A
+                        sustainability-oriented
+                        district at
+                        the Rhythm and Threads @rhythm.and.threads festival.<br /><br /> Eco-Jam is a creative reuse
+                        festival featuring
+                        live street art, thrift & art pop-ups, performances, skate and music. Come celebrate
+                        collaborative
+                        arts and making art from junk with us! RSVP now via link in our bio.
+                    </p>
+                </div>
+            </div>
+            <!-- 
                 <br /><br />
                 FAQs:
                 <br />
@@ -127,17 +133,39 @@
                 <br /><br />
 
                 What’s the Agenda?<br />
-                Thrift & Art Pop-Ups: 12:00 pm - 6:00 pm<br />
-                Live Artist Jam: 12:00 pm - 4:00 pm<br />
-                Skate Jam: 12:00 pm - 2:00 pm<br />
-                DJ + Dance Jam: 2:00 pm - 3:00 pm<br />
-                Exhibition Dance Battle & Performance Showcase: 3:00 pm - 4:00 pm<br />
-                Vocal Performances: 4:00 - 6:00 pm<br />
-                <br />
 
             </p> -->
             <!-- <p class="author-tag"> Flyer design by @jenny_mci</p> -->
-        </a>
+        </div>
+        <div class="featured_items">
+            <div>
+                <h3 class="mouse-font">FAQs:</h3>
+                <p>
+                    When and where?
+                    <br />
+                    Date: April 12th
+                    <br />
+                    Time: 12pm - 6pm
+                    <br />
+                    Location: South Craig Street, Oakland, PA
+                    <br /><br />
+                </p>
+
+            </div>
+            <div>
+                <h3 class="mouse-font">What’s the Agenda?</h3>
+                <p>
+                    Thrift & Art Pop-Ups: 12:00 pm - 6:00 pm<br />
+                    Live Artist Jam: 12:00 pm - 4:00 pm<br />
+                    Skate Jam: 12:00 pm - 2:00 pm<br />
+                    DJ + Dance Jam: 2:00 pm - 3:00 pm<br />
+                    Exhibition Dance Battle & Performance Showcase: 3:00 pm - 4:00 pm<br />
+                    Vocal Performances: 4:00 - 6:00 pm<br />
+                    <br />
+                </p>
+
+            </div>
+        </div>
     </div>
 
     <!-- <div class="featured_work">
@@ -162,14 +190,17 @@
     </div> -->
 
 
-    <div class="mb10">
-        <div id="updatenote" class="updatenote mt10"> loading model ..</div>
-    </div>
-    <video class="videobox canvasbox" autoplay="autoplay" id="myvideo" style="display: none;"></video>
-    <canvas id="canvas_track" class="border canvasbox"></canvas>
+    <div style="display: none">
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js"> </script>
+        <div class="mb10">
+            <div id="updatenote" class="updatenote mt10"> loading model ..</div>
+        </div>
+        <video class="videobox canvasbox" autoplay="autoplay" id="myvideo" style="display: none;"></video>
+        <canvas id="canvas_track" class="border canvasbox"></canvas>
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js"> </script>
+    </div>
     <!-- If there are not predictions
         dont do anything.
 

@@ -62,7 +62,7 @@ window.addEventListener('load', async () => {
             model.renderPredictions(predictions, canvas, context, video);
 
             predictions.forEach((prediction) => {
-                let normX = prediction.bbox[0] / 600;
+                let normX = prediction.bbox[0] / 500;
                 let normY = prediction.bbox[1] / 400;
 
                 // if (prevHandPos) {
