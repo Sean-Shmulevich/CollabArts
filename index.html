@@ -55,9 +55,10 @@
                 <h1 class="">COLLAB <br> ARTS</h1>
             </div>
         </header>
-        <button id="trackbutton" class="bx--btn bx--btn--secondary" type="button" disabled>
-            Toggle Video
-        </button>
+
+        <span class="open_modal">
+            Try our Interactive Demo
+        </span>
     </div>
 
     <div class="about_home">
@@ -91,13 +92,18 @@
         </div>
     </div>
     <div class="featured_work">
-        <h2 class="mouse-font">Featured</h2>
+        <a href="/projets.html">
+            <h2 class="glow_font">Featured</h2>
+        </a>
         <div href="/project.html" class="featured_card">
-            <img class="featured_instagram" src="ecoJamImage.jpg" alt="">
+            <a href="/projects.html">
+
+                <img class="featured_instagram" src="ecoJamImage.jpg" alt="">
+            </a>
             <div class="featured_video">
                 <div>
 
-                    <h3 class="mouse-font underline">Promo</h3>
+                    <h3 class="mouse-font underline purp-font">Promo</h3>
                     <iframe width="460" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ZbfPZqxdnnjJkVQS"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -107,7 +113,7 @@
 
                 <div>
 
-                    <h3 class="mouse-font underline">Description</h3>
+                    <h3 class="mouse-font underline purp-font">Description</h3>
                     <p class="description">Collab Arts At Pitt presents Eco-Village,<br /><br /> A
                         sustainability-oriented
                         district at
@@ -119,27 +125,10 @@
                     </p>
                 </div>
             </div>
-            <!-- 
-                <br /><br />
-                FAQs:
-                <br />
-                When and where?
-                <br />
-                Date: April 12th
-                <br />
-                Time: 12pm - 6pm
-                <br />
-                Location: South Craig Street, Oakland, PA
-                <br /><br />
-
-                What’s the Agenda?<br />
-
-            </p> -->
-            <!-- <p class="author-tag"> Flyer design by @jenny_mci</p> -->
         </div>
         <div class="featured_items">
             <div>
-                <h3 class="mouse-font">FAQs:</h3>
+                <h3 class="mouse-font purp-font">FAQs:</h3>
                 <p>
                     When and where?
                     <br />
@@ -153,7 +142,7 @@
 
             </div>
             <div>
-                <h3 class="mouse-font">What’s the Agenda?</h3>
+                <h3 class="mouse-font purp-font">What’s the Agenda?</h3>
                 <p>
                     Thrift & Art Pop-Ups: 12:00 pm - 6:00 pm<br />
                     Live Artist Jam: 12:00 pm - 4:00 pm<br />
@@ -166,28 +155,8 @@
 
             </div>
         </div>
+        <h3 class="featured_more_info">more info <span class="carat">⌄</span></h3>
     </div>
-
-    <!-- <div class="featured_work">
-        <h2>Current Projects</h2>
-        <p class="description">Your description goes here.</p>
-    </div> -->
-
-
-    <!-- <div class="slideshow-container">
-        <h2>Recent Projects</h2>
-        <div class="mySlides fade">
-            <img src="image1.jpg" alt="Image 1">
-        </div>
-        <div class="mySlides fade">
-            <img src="image1.jpg" alt="Image 2">
-        </div>
-        <div class="mySlides fade">
-            <img src="image1.jpg" alt="Image 3">
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div> -->
 
 
     <div style="display: none">
@@ -201,27 +170,39 @@
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js"> </script>
     </div>
-    <!-- If there are not predictions
-        dont do anything.
-
-        Somehow integrate with the fat particles.js jawnski.
-        You cant move the mouse with javascript 
-        particles.js probably wont let me use not a mouse.
-
-        easiest way would be to mock a mouse?
-
-        track.js must provide a function that keeps pumping out values. mapping that to a mouselike value.
-        if should only be track.js if camera is opted into.
-
-        I need to get the percent of X and Y of where the prediction was made.
-        - I bet i could find a way in the docs
-
-        //theres an issue with two hands. keep a prev value and compare it to the current value. if its too far off, ignore it.
-        //this will also solve another problem with clicking, on open/close.
-    -->
 
     <script src="track.js"></script>
     <script src="script.js"></script>
+
+    <!-- Modal, only shown when interactive demo is shown -->
+    <div class="modal_instructions">
+        <p class="close_modal">X</p>
+        <h3>Interactive Demo</h3>
+        <img src="/playIcon.png" alt="Collab Arts Logo" width="100">
+        <img src="/waveIcon.png" alt="Collab Arts Logo" width="100">
+        <p>
+            To showcase an artistic collaboration, we have created an interactive demo that allows you to control the
+            animation on the collabartspgh.com homepage using your camera.
+        </p>
+        <p>
+            We are using a machine learning model to track your hand movements. This model is running locally on your
+            browser and does not store any data.
+        </p>
+        <h3>Instructions</h3>
+        <ol>
+            <li>Click the "Enable Camera" button to start the camera.
+                <br>
+                <span style="font-size: .65rem;">Your browser will also prompt you to enable camera access</span>
+            </li>
+            <li>Hold your hand about 3-5 feet away from your webcam and slowly move your hand</li>
+            <li>You will notice that the animation can be controlled with the movement of your hand</li>
+            <li>Try Opening and closing your hand for an extra effect</li>
+            <li>After enabling camera you can close this window</li>
+        </ol>
+        <button id="trackbutton" type="button" disabled>
+            Enable Camera
+        </button>
+    </div>
 
 </body>
 
