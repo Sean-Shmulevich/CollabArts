@@ -18,6 +18,25 @@
   font-weight: normal;
   font-style: normal;
 }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.mouse_font {
+  font-family: mouse;
+}
+
+.montserrat_font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.montserrat_font_title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
 
 /*=============================================
 =       Animations                            =
@@ -225,8 +244,16 @@ nav div {
   margin-right: 1.25rem;
 }
 
+.about_home p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 .about_home h2 {
-  font-family: mouse;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
   margin-bottom: -18px;
   color: black;
   text-shadow: 0 0 7px #aa90f9;
@@ -302,7 +329,7 @@ nav div {
   display: none;
   justify-content: flex-start;
   margin-top: 20px;
-  padding-inline: 12px;
+  padding-inline: 14px;
   line-height: 1.5;
 }
 .featured_items > div {
@@ -314,10 +341,17 @@ nav div {
   border-style: solid;
 }
 
+.featured_items p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .featured_more_info {
   font-size: 0.9rem;
   text-align: right;
-  margin-right: 50px;
+  margin-right: 25px;
   margin-top: 2px;
 }
 .carat {
@@ -389,6 +423,10 @@ nav div {
 =         Classes for about us page =
 =============================================*/
 .description {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
   text-align: left;
   margin-top: 10px; /* Adjust margin as needed */
 }
@@ -454,7 +492,7 @@ nav div {
 
 /* Add responsive styles as needed */
 
-.author-tag {
+.author_tag {
   text-align: right;
   margin-bottom: -5px;
   margin-top: -35px;
@@ -467,14 +505,11 @@ nav div {
 .full_flex {
   flex: 1;
 }
-.text-shadow {
+.text_shadow {
   animation: text-shadow 0.6s both;
 }
-.mouse-font {
-  font-family: mouse;
-}
 
-.wide-letters {
+.wide_letters {
   letter-spacing: 1.55rem;
 }
 
@@ -486,12 +521,11 @@ nav div {
   display: none;
 }
 
-.purp-font {
+.purp_font {
   color: #aa90f9;
 }
 
-.glow_font {
-  font-family: mouse;
+.glow_text {
   margin-bottom: -18px;
   color: black;
   text-shadow: 0 0 7px #aa90f9;
@@ -572,7 +606,7 @@ nav div {
     width: unset;
   }
   .featured_items div {
-    margin-block: 10px;
+    margin-bottom: 20px;
   }
   .featured_instagram {
     margin-inline: auto;
@@ -586,6 +620,14 @@ nav div {
   .about_home {
     flex-direction: column;
   }
+  .about_home > div {
+    margin-right: 0;
+    margin-bottom: -20px;
+  }
+  .about_home > div:last-child {
+    margin-bottom: 0px;
+  }
+
   .nav_bar {
     display: none;
     position: absolute;
@@ -617,5 +659,16 @@ nav div {
 
   h2 {
     font-size: 30px;
+  }
+  .featured_work > a > h2 {
+    font-size: 3rem;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  hr {
+    width: calc(
+      100% - 50px
+    ); /* Subtract total horizontal margin from 100% width */
+    margin-inline: 25px;
   }
 }
