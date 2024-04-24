@@ -94,7 +94,7 @@ h1 {
 
   width: fit-content;
   padding-inline: 40px;
-  height: 400px;
+  height: 310px;
   border-color: rgba(255, 255, 255, 0.4);
   border-style: solid;
   border-width: 5px;
@@ -673,6 +673,12 @@ body {
 
   h1 {
     font-size: 50px;
+    margin-bottom: 95px;
+    margin-right: 18px;
+  }
+  .circleBorder {
+    height: 150px;
+    max-width: 50vw;
   }
 
   header {
