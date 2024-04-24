@@ -395,14 +395,31 @@ nav div {
   padding-bottom: 15px;
   z-index: 100;
 }
+
+.modal_instructions p,
+.modal_instructions ol {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.modal_instructions ol {
+  line-height: 1.75;
+}
+.modal_instructions li {
+  margin-block: 10px;
+}
 .modal_instructions li span {
   font-size: 0.65rem;
+  display: block;
+  margin-top: -5px;
+  margin-left: 10px;
 }
 
 .img_flex {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
