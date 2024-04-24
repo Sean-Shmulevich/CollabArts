@@ -295,7 +295,6 @@ nav div {
   width: 600px; */
   display: flex;
   flex-direction: row;
-  border-radius: 8px;
   width: fit-content;
   margin-inline: auto;
   padding-inline: 50px;
@@ -306,14 +305,14 @@ nav div {
 }
 
 .featured_instagram {
-  width: 28vw;
+  width: 30vw;
   max-height: 90%;
   min-height: 90%;
   object-fit: contain;
   /* max-width: 85vw; */
-  border-radius: 25px;
   margin-right: 15px;
-  margin-top: 17px;
+  margin-top: 40px;
+  border-radius: 30px;
   /* border-color: #aa90f9;
 
 
