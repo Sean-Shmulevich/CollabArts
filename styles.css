@@ -74,19 +74,33 @@ body {
 }
 
 hr {
+  margin-top: 20px;
+  margin-bottom: -20px;
   width: calc(
     100% - 100px
   ); /* Subtract total horizontal margin from 100% width */
   margin-inline: 50px;
 }
 form {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: #ffffff;
+  margin-inline: 10vw;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  color: rgba(170, 144, 249, 0.9);
+}
+
+form button {
   margin-top: 20px;
+}
+
+form h2 {
+  color: black;
+  text-shadow: 0 0 7px #aa90f9;
+  font-size: 2.5rem;
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 
 label {
@@ -96,24 +110,54 @@ label {
   text-align: left;
 }
 
-input {
+input,
+input:focus {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
   box-sizing: border-box;
+  background-color: #212020;
+  outline: unset;
+  border: 1px solid rgba(170, 144, 249, 0.9);
+  border-radius: 8px;
+  color: white;
+}
+
+textarea {
+  max-width: 100%;
+  width: 100%;
+  min-width: 300px;
+  padding-inline: 10px;
+  padding-block: 20px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  background-color: #212020;
+  outline: unset;
+  border: 1px solid rgba(170, 144, 249, 0.9);
+  border-radius: 8px;
+  color: white;
+  resize: none;
+  overflow-y: hidden;
 }
 
 button {
-  background-color: #4caf50;
-  color: white;
+  border: 1px solid rgba(170, 144, 249, 0.9);
+  background: rgba(0, 0, 0, 0.65);
   padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
+}
+button span {
+  color: white;
+  text-shadow: 0 0 6px #aa90f9;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: rgba(170, 144, 249, 0.2);
 }
 
 h2 {
@@ -627,6 +671,10 @@ nav div {
 .active_page {
   color: #aa90f9;
 }
+
+.purple_back {
+  background-color: #aa90f9;
+}
 .glow_text {
   margin-bottom: -18px;
   color: black;
@@ -642,6 +690,15 @@ nav div {
   -webkit-box-shadow: 0px 0px 105px 0px rgba(170, 144, 249, 0.9);
   -moz-box-shadow: 0px 0px 105px 0px rgba(170, 144, 249, 0.9);
   box-shadow: 0px 0px 105px 0px rgba(170, 144, 249, 0.9);
+}
+
+.purple_glass {
+  background: rgba(170, 144, 249, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
 }
 
 .glass {
@@ -787,6 +844,7 @@ nav div {
       100% - 50px
     ); /* Subtract total horizontal margin from 100% width */
     margin-inline: 25px;
+    margin-block: unset;
   }
   #projects_body hr {
     margin-bottom: 20px;
@@ -795,5 +853,8 @@ nav div {
   .right_about img {
     max-width: 100%;
     object-fit: contain;
+  }
+  form {
+    margin-inline: 3.5vw;
   }
 }
