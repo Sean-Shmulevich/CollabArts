@@ -223,9 +223,23 @@
     </div>
 
     <footer
-        style="display: flex; align-items: center; height:100px; background-color: black; bottom: 0; left: 0; right: 0;overflow-x:hidden">
+        style="display: flex; justify-content: space-between;align-items: center; height:400px; background-color: black; bottom: 0; left: 0; right: 0;overflow-x:hidden">
 
         <a href="linktree.html" style="margin-left: 20px; color: white" class="montserrat_font">LinkTree</a>
+        <form class="purple_glass" action="#" method="post">
+            <h2>Sign Up for Our Email List</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- <label for="message">Message:</label> -->
+            <!-- This text area uses javascript to expand and contract depending on the amount of content inside of it. -->
+            <!-- <textarea class="form_text_area" rows="1" id="message" name="message"></textarea> -->
+
+            <button type="submit"><span>Sign Up</span></button>
+        </form>
     </footer>
 
 
