@@ -5,16 +5,18 @@
 @import url("https://fonts.cdnfonts.com/css/vcr-osd-mono");
 @font-face {
   font-family: "Mouse";
-  src: url("mouse.eot?") format("eot"), url("mouse.woff") format("woff"),
-    url("mouse.ttf") format("truetype"), url("mouse.svg#Mouse") format("svg");
+  src: url("/fonts/mouse.eot?") format("eot"),
+    url("/fonts/mouse.woff") format("woff"),
+    url("/fonts/mouse.ttf") format("truetype"),
+    url("/fonts/mouse.svg#Mouse") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "vcr";
-  src: url("vcr_osd_mono_1.001-webfont.woff2") format("woff2"),
-    url("vcr_osd_mono_1.001-webfont.woff") format("woff"),
-    url("VCR_OSD_MONO_1.001.ttf") format("truetype");
+  src: url("/fonts/vcr_osd_mono_1.001-webfont.woff2") format("woff2"),
+    url("/fonts/vcr_osd_mono_1.001-webfont.woff") format("woff"),
+    url("/fonts/VCR_OSD_MONO_1.001.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -306,8 +308,6 @@ nav div {
 
 .featured_instagram {
   width: 30vw;
-  max-height: 90%;
-  min-height: 90%;
   object-fit: contain;
   /* max-width: 85vw; */
   margin-right: 15px;
@@ -367,6 +367,17 @@ nav div {
 .carat {
   transform: translate(1px, -2px);
   display: inline-block;
+}
+
+/*=============================================
+=         content layout on projects page  =
+=============================================*/
+#projects_body .featured_video {
+  width: 55vw;
+}
+
+#projects_body > div:last-child {
+  margin-bottom: 50px;
 }
 
 /*=============================================
@@ -516,6 +527,7 @@ nav div {
 
 .right_about img {
   max-width: 100%;
+  border-radius: 20px;
   object-fit: cover;
 }
 
@@ -647,7 +659,7 @@ nav div {
   }
 }
 @media only screen and (max-width: 980px) {
-  .featured_video {
+  .featured_video:not(#projects_body .featured_video) {
     border-color: rgba(255, 255, 249, 0.4);
     border-radius: 20px;
     border-width: 5px;
@@ -688,7 +700,10 @@ nav div {
   }
   .featured_instagram {
     margin-inline: auto;
-    width: 80vw;
+    width: 90vw;
+  }
+  #projects_body .featured_video {
+    min-width: 85vw;
   }
   .featured_video {
     /* padding-inline: 20px; */
