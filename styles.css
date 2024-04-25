@@ -211,13 +211,16 @@ nav div {
   text-decoration: none;
 }
 
-.nav_bar a:hover {
-  color: #aa90f9;
+.nav_bar a span:nth-child(2):hover {
+  color: #aa90f9 !important;
 }
 
 .nav_bar a span:nth-child(2) {
   margin-inline: -1.5px;
 }
+/* .nav_bar a span:nth-child(2):hover {
+  color: white !important;
+} */
 .menu_icon {
   z-index: 5;
   display: none;
@@ -380,6 +383,17 @@ nav div {
   margin-bottom: 50px;
 }
 
+#projects_body hr {
+  margin-top: 50px;
+  margin-bottom: -10px;
+}
+
+#projects_body h2 {
+  text-align: left;
+  margin-left: 6.3vw;
+  margin-bottom: -20px;
+}
+
 /*=============================================
 =         Interactive demo Modal styles =
 =============================================*/
@@ -533,7 +547,7 @@ nav div {
 
 .board {
   text-align: center;
-  padding: 20px;
+  padding: 80px;
 }
 .board p {
   color: white !important;
@@ -542,7 +556,7 @@ nav div {
 .board_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 30px;
   margin-top: 20px;
 }
 
@@ -610,6 +624,9 @@ nav div {
   color: #aa90f9;
 }
 
+.active_page {
+  color: #aa90f9;
+}
 .glow_text {
   margin-bottom: -18px;
   color: black;
@@ -641,6 +658,9 @@ nav div {
 @media (max-width: 768px) {
   .board_grid {
     grid-template-columns: 1fr;
+  }
+  .board {
+    padding: 20px;
   }
   .board_intro img {
     height: 500px;
@@ -767,6 +787,10 @@ nav div {
       100% - 50px
     ); /* Subtract total horizontal margin from 100% width */
     margin-inline: 25px;
+  }
+  #projects_body hr {
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .right_about img {
     max-width: 100%;
