@@ -103,6 +103,10 @@ form h2 {
   margin-bottom: 15px;
 }
 
+form {
+  margin-bottom: 50px;
+}
+
 label {
   display: block;
   margin: 10px 0;

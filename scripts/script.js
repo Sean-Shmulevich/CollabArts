@@ -91,20 +91,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 
-  function adjustTextareaHeight() {
-    let textarea = document.getElementById('form_text_area');
+  function adjustTextareaHeight(textarea) {
     textarea.style.height = 'auto';  // Reset the height
 
     textarea.style.height = textarea.scrollHeight + 'px';  // Set the height to scroll height
   }
 
   // Attach the function to the input event of the textarea
-  var textarea = document.getElementById('form_text_area');
+  const textarea = document.querySelectorAll('.form_text_area');
 
   if (textarea) {
-    textarea.addEventListener('input', adjustTextareaHeight);
-    // Call the function initially to adjust to the default text
-    adjustTextareaHeight();
+    textarea.forEach((text) => {
+      text.addEventListener('input', () => adjustTextareaHeight(text));
+    });
   }
 
 });
