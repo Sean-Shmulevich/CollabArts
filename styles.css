@@ -130,7 +130,6 @@ input:focus {
 textarea {
   max-width: 100%;
   width: 100%;
-  min-width: 300px;
   padding-inline: 10px;
   padding-block: 20px;
   margin: 5px 0;
@@ -654,6 +653,13 @@ nav div {
 }
 .text_shadow {
   animation: text-shadow 0.6s both;
+}
+
+.get_involved {
+  margin-top: 20px;
+  color: #aa90f9;
+  text-align: center;
+  margin-bottom: 30px !important;
 }
 
 .wide_letters {
