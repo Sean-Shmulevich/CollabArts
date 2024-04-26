@@ -13,8 +13,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js"> </script>
-    <script src="scripts/track.js"></script>
+
+    <script>
+        if (window.innerWidth > 600) {
+            var head = document.getElementsByTagName('head')[0];
+            var script = document.createElement('script');
+            script.src = "https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js";
+            head.appendChild(script);
+
+            var script2 = document.createElement('script');
+            script2.src = "scripts/track.js";
+            head.appendChild(script2);
+        }
+    </script>
+
     <script src="scripts/script.js"></script>
     <script src="scripts/particles.js"></script>
 
