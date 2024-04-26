@@ -86,11 +86,80 @@ form {
   padding: 20px;
   border-radius: 8px;
 }
+
+form label {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(170, 144, 249, 0.08);
+  height: fit-content;
+  min-height: 400px;
+  bottom: 0;
+  padding-bottom: 50px;
+  padding-inline: 6vw;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  line-height: 1.3;
+}
+
 footer form {
   margin-inline: 0;
-  margin-right: 40px;
-  margin-block: auto;
+  margin-top: 50px;
+  padding: 0;
   border-radius: 8px;
+  width: 33%;
+
+  white-space: nowrap;
+}
+footer form h2 {
+  font-size: calc(1rem + 1vw);
+}
+footer h3 {
+  color: #aa90f9;
+  text-align: center;
+  /* font-size: 3.5rem; */
+  font-size: 3.5rem;
+  text-shadow: 0 0 7px #aa90f9;
+  margin-bottom: 20px;
+}
+footer form button {
+  border: 1px solid rgba(170, 144, 249, 0.9);
+  background: #212020;
+  padding: 10px 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer a {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer hgroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 form label {
@@ -109,7 +178,6 @@ form button {
 }
 
 form h2 {
-  color: black;
   text-shadow: 0 0 7px #aa90f9;
   font-size: 2.5rem;
   margin-top: 0px;
@@ -351,7 +419,8 @@ nav div {
 .featured_work a:visited,
 .featured_work a:link,
 .featured_work a:hover,
-.featured_work a:active {
+.featured_work a:active,
+footer a {
   text-decoration: none;
 }
 
@@ -702,6 +771,9 @@ input.stv-radio-tab:checked + label {
 .full_flex {
   flex: 1;
 }
+.my-auto {
+  margin-block: auto;
+}
 .text_shadow {
   animation: text-shadow 0.6s both;
 }
@@ -979,14 +1051,6 @@ input.stv-radio-tab:checked + label {
     margin-right: 18px;
   }
 }
-@media only screen and (max-width: 980px) {
-  .featured_video:not(#projects_body .featured_video) {
-    border-color: rgba(255, 255, 249, 0.4);
-    border-radius: 20px;
-    border-width: 5px;
-    border-style: solid;
-  }
-}
 @media only screen and (max-width: 768px) {
   .menu_icon {
     display: block;
@@ -994,6 +1058,12 @@ input.stv-radio-tab:checked + label {
   .modal_instructions {
     top: 52vh;
     width: 80vw;
+  }
+  .featured_video:not(#projects_body .featured_video) {
+    border-color: rgba(255, 255, 249, 0.4);
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
   }
   .nav_bar {
     width: calc(100% - 50px) !important;
@@ -1109,14 +1179,29 @@ input.stv-radio-tab:checked + label {
   }
   footer {
     width: 100%;
+    padding-top: 40px;
+    padding-inline: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   footer form {
-    margin-inline: 45px;
+    width: calc(100% - 80px);
+    margin-inline: 40px;
+    margin-top: 50px;
   }
   .get_involved {
     margin-left: 4vw;
+  }
+  footer hgroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  footer .my-auto {
+    width: 100%;
+    margin-left: 80px;
   }
 }
