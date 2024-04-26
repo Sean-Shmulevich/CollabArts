@@ -219,7 +219,9 @@ label {
 }
 
 input,
-input:focus {
+input:focus,
+input:autofill,
+input:-webkit-autofill {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
