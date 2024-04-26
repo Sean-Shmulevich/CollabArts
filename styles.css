@@ -439,7 +439,7 @@ nav div {
 .featured_work h2 {
   text-align: left !important;
   margin-bottom: -18px;
-  margin-left: 55px;
+  margin-left: 18px;
 }
 
 .featured_work a,
@@ -484,8 +484,11 @@ footer a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
-  padding-inline: 15px;
+  margin-top: 10px;
+  padding-inline: 20px;
+}
+#projects_page .featured_video {
+  padding-inline: 0px;
 }
 
 .featured_items {
@@ -550,6 +553,14 @@ footer a {
   text-align: left;
   margin-left: 6.3vw;
   margin-bottom: -20px;
+}
+/*=============================================
+=     Single project page body                =
+=============================================*/
+
+#project_body .featured_work h2 {
+  text-align: left;
+  margin-left: 50px;
 }
 
 /*=============================================
@@ -687,7 +698,7 @@ footer a {
   padding: 0;
 }
 .board h2 {
-  text-align: center;
+  text-align: left;
   margin: 0;
   padding: 0;
 }
@@ -1122,7 +1133,7 @@ input.stv-radio-tab:checked + label {
   }
   .featured_instagram {
     margin-inline: auto;
-    width: 90vw;
+    width: calc(100vw - 40px);
   }
   #projects_body .featured_video {
     min-width: 85vw;
@@ -1161,7 +1172,8 @@ input.stv-radio-tab:checked + label {
   h1 {
     font-size: 50px;
     margin-bottom: 95px;
-    margin-right: 18px;
+    margin-inline: auto;
+    margin-right: -9px;
   }
   .titleBorder {
     height: 150px;
@@ -1184,6 +1196,10 @@ input.stv-radio-tab:checked + label {
     font-size: 3rem;
     margin-top: 20px;
     margin-bottom: -20px;
+    margin-left: 18px !important;
+  }
+  #project_body .featured_work h2 {
+    text-align: left;
     margin-left: 25px;
   }
   hr {
@@ -1238,5 +1254,11 @@ input.stv-radio-tab:checked + label {
     columns: 12rem;
     width: calc(100% - 50px);
     margin-inline: 25px;
+  }
+  .wide_letters {
+    letter-spacing: 0.5ch;
+  }
+  #open_modal {
+    display: none;
   }
 }
