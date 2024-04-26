@@ -708,8 +708,9 @@ input.stv-radio-tab:checked + label {
 
 .get_involved {
   margin-top: 20px;
+  margin-left: 10vw;
   color: #aa90f9;
-  text-align: center;
+  text-align: left !important;
   margin-bottom: 30px !important;
 }
 
@@ -741,7 +742,6 @@ input.stv-radio-tab:checked + label {
   color: #aa90f9;
   /* color: black; */
   text-shadow: 0 0 7px #aa90f9;
-  text-align: center;
 }
 
 .underline {
@@ -1115,5 +1115,8 @@ input.stv-radio-tab:checked + label {
   }
   footer form {
     margin-inline: 45px;
+  }
+  .get_involved {
+    margin-left: 4vw;
   }
 }
