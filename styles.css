@@ -1136,7 +1136,8 @@ input.stv-radio-tab:checked + label {
     width: calc(100vw - 40px);
   }
   #projects_body .featured_video {
-    min-width: 85vw;
+    width: calc(100vw - 40px);
+    margin-left: -20px;
   }
   .featured_video {
     /* padding-inline: 20px; */
