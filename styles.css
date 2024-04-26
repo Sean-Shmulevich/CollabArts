@@ -97,6 +97,13 @@ form label {
   color: rgba(170, 144, 249, 0.9);
 }
 
+.h-captcha {
+  margin-top: 18px;
+}
+#result {
+  margin-top: 15px;
+}
+
 form button {
   margin-top: 20px;
 }
@@ -315,7 +322,7 @@ nav div {
   font-optical-sizing: auto;
   font-weight: 800;
   margin-bottom: -18px;
-  color: black;
+  color: #aa90f9;
   text-shadow: 0 0 7px #aa90f9;
   text-align: center;
 }
@@ -324,7 +331,6 @@ nav div {
 =         featured content layout on homepage =
 =============================================*/
 .featured_work {
-  text-align: center;
   margin-inline: auto;
 }
 
@@ -336,7 +342,9 @@ nav div {
 }
 
 .featured_work h2 {
-  margin-bottom: 0px;
+  text-align: left !important;
+  margin-bottom: -18px;
+  margin-left: 55px;
 }
 
 .featured_work a,
@@ -487,6 +495,7 @@ nav div {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
+  max-width: 90vw;
   background-color: black;
   padding-inline: 15px;
   padding-bottom: 15px;
@@ -729,7 +738,8 @@ input.stv-radio-tab:checked + label {
 }
 .glow_text {
   margin-bottom: -18px;
-  color: black;
+  color: #aa90f9;
+  /* color: black; */
   text-shadow: 0 0 7px #aa90f9;
   text-align: center;
 }
@@ -981,6 +991,10 @@ input.stv-radio-tab:checked + label {
   .menu_icon {
     display: block;
   }
+  .modal_instructions {
+    top: 52vh;
+    width: 80vw;
+  }
   .nav_bar {
     width: calc(100% - 50px) !important;
     margin-inline: 25px;
@@ -1069,9 +1083,11 @@ input.stv-radio-tab:checked + label {
     font-size: 30px;
   }
   .featured_work > a > h2 {
+    text-align: left;
     font-size: 3rem;
-    margin-top: 15px;
-    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    margin-left: 25px;
   }
   hr {
     width: calc(

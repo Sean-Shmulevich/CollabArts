@@ -77,8 +77,11 @@ document.addEventListener('DOMContentLoaded', function () {
         cameraButton.textContent = "Enable Camera";
         cameraButton.style.backgroundColor = "#4caf50";
         modalOpen.textContent = "Try our Interactive Demo";
+        modalOpen.textContent = "Try our Interactive Demo";
+
         modalOpen.style.color = "rgba(255, 255, 255, 0.65)";
       }
+      modal.style.display = "none";
     });
 
     modalOpen.addEventListener('click', function () {
@@ -103,6 +106,48 @@ document.addEventListener('DOMContentLoaded', function () {
   if (textarea) {
     textarea.forEach((text) => {
       text.addEventListener('input', () => adjustTextareaHeight(text));
+    });
+  }
+
+  const form = document.getElementById('get_involved_form');
+  const result = document.getElementById('result');
+
+  if (form !== null && result !== null) {
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+      result.innerHTML = "Please wait..."
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
+      })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            result.innerHTML = "Form submitted successfully";
+          } else {
+            console.log(response);
+            result.innerHTML = json.message;
+          }
+        })
+        .catch(error => {
+          console.log(error);
+          result.innerHTML = "Something went wrong!";
+        })
+        .then(function () {
+          form.reset();
+          setTimeout(() => {
+            result.style.display = "none";
+          }, 3000);
+        });
     });
   }
 

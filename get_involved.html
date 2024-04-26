@@ -11,6 +11,7 @@
         @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
     <script src="scripts/script.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </head>
 
 <body>
@@ -48,18 +49,12 @@
         </a>
     </nav>
 
-    <h2 class="get_involved montserrat_font_title">Get Involved</h2>
+    <h2 class="glow_text get_involved montserrat_font_title">Get Involved</h2>
 
-    <form class="purple_glass" action="#" method="post">
-        <div class="stv-radio-tabs-wrapper">
-            <input type="radio" class="stv-radio-tab" name="radioTabTest" value="1" id="tab1" checked />
-            <label for="tab1">Tab 1</label>
-            <input type="radio" class="stv-radio-tab" name="radioTabTest" value="2" id="tab2" />
-            <label for="tab2">Tab 2</label>
-            <input type="radio" class="stv-radio-tab" name="radioTabTest" value="3" id="tab3" />
-            <label for="tab3">Tab 3</label>
-        </div>
-        <h2>Student Interest</h2>
+    <form id="get_involved_form" class="purple_glass" method="POST" id="form">
+
+        <input type="hidden" name="access_key" value="f77b6205-7e3f-4893-bb6c-1c5d03a4efc4">
+
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -67,41 +62,15 @@
         <input type="email" id="email" name="email" required>
 
         <label for="message">Message:</label>
-        <!-- This text area uses javascript to expand and contract depending on the amount of content inside of it. -->
-        <textarea class="form_text_area" rows="1" id="message" name="message"></textarea>
+        <textarea class="form_text_area" id="message" name="message" required></textarea>
+        <div class="h-captcha" data-captcha="true"></div>
 
-        <button type="submit"><span>Sign Up</span></button>
+        <button type="submit"><span>Submit Form</span></button>
+
+        <div id="result"></div>
+
     </form>
 
-    <form class="purple_glass" action="#" method="post">
-        <h2>Artist Inquiry</h2>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <!-- This text area uses javascript to expand and contract depending on the amount of content inside of it. -->
-        <textarea class="form_text_area" rows="1" id="message" name="message"></textarea>
-
-        <button type="submit"><span>Sign Up</span></button>
-    </form>
-
-    <form class="purple_glass" action="#" method="post">
-        <h2>Vendor Inquiry</h2>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <!-- This text area uses javascript to expand and contract depending on the amount of content inside of it. -->
-        <textarea class="form_text_area" rows="1" id="message" name="message"></textarea>
-
-        <button type="submit"><span>Sign Up</span></button>
-    </form>
 
 
 
