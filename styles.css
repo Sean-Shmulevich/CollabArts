@@ -432,7 +432,7 @@ nav div {
 .featured_work iframe {
   width: 100%;
   min-height: 300px;
-  margin: 20px 20px 0 20px;
+  margin: 32px 20px 0 20px;
   height: 100%;
 }
 
@@ -1181,6 +1181,7 @@ input.stv-radio-tab:checked + label {
   }
 
   .featured_work iframe {
+    margin-top: 0px;
     margin-bottom: 15px;
   }
 
