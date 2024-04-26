@@ -62,6 +62,25 @@ a {
 html {
   -webkit-text-size-adjust: 100%;
 }
+figure {
+  margin: 0;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+}
+main {
+  display: block;
+  columns: 20rem;
+  gap: 1rem;
+  margin-top: 50px;
+  width: calc(100% - 130px);
+  margin-inline: 65px;
+}
+
+main > figure > img {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -1208,8 +1227,16 @@ input.stv-radio-tab:checked + label {
     align-items: center;
     margin-bottom: 20px;
   }
+  footer a {
+    margin-bottom: 25px;
+  }
   footer .my-auto {
     width: 100%;
     margin-left: 80px;
+  }
+  main {
+    columns: 12rem;
+    width: calc(100% - 50px);
+    margin-inline: 25px;
   }
 }
