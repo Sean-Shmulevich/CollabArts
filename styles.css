@@ -434,7 +434,7 @@ nav div {
 .featured_work iframe,
 .ryt {
   width: 100%;
-  object-fit: cover;
+  object-fit: covert add;
   min-height: 300px;
   margin: 32px 20px 0 20px;
   height: 100%;
@@ -1067,6 +1067,17 @@ input.stv-radio-tab:checked + label {
   height: 32px;
 }
 
+.threads {
+  display: flex;
+  margin-inline: auto;
+  justify-content: center;
+  margin-top: 40px;
+}
+.threads img {
+  width: 25vw;
+  aspect-ratio: 1/1;
+}
+
 /*=============================================
 =       Media queries for responsiveness =
 =============================================*/
@@ -1266,5 +1277,13 @@ input.stv-radio-tab:checked + label {
   }
   #open_modal {
     display: none;
+  }
+  .threads {
+    flex-direction: column;
+  }
+  .threads img {
+    flex-direction: column;
+    margin-inline: auto;
+    width: 80vw;
   }
 }
