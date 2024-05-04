@@ -434,10 +434,13 @@ nav div {
 .featured_work iframe,
 .ryt {
   width: 100%;
-  object-fit: covert add;
   min-height: 300px;
   margin: 32px 20px 0 20px;
   height: 100%;
+}
+
+.ryt {
+  object-fit: cover;
 }
 
 .featured_work h2 {
