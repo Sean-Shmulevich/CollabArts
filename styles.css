@@ -680,7 +680,7 @@ footer a {
   display: flex;
   margin: auto;
   width: 100%; /* Make it take full width of the screen */
-  max-width: 1000px; /* Set a max-width for larger screens */
+  max-width: 1300px; /* Set a max-width for larger screens */
   padding: 20px;
   box-sizing: border-box;
 }
@@ -714,9 +714,9 @@ footer a {
 }
 
 .right_about img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 20px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .board {
@@ -1285,5 +1285,8 @@ input.stv-radio-tab:checked + label {
     flex-direction: column;
     margin-inline: auto;
     width: 80vw;
+  }
+  .right_about {
+    display: none;
   }
 }
