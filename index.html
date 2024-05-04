@@ -14,14 +14,16 @@
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
+
+    <!-- Dont load the handtrack script if we are on mobile. -->
     <script>
         if (window.innerWidth > 600) {
-            var head = document.getElementsByTagName('head')[0];
-            var script = document.createElement('script');
+            let head = document.getElementsByTagName('head')[0];
+            let script = document.createElement('script');
             script.src = "https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js";
             head.appendChild(script);
 
-            var script2 = document.createElement('script');
+            let script2 = document.createElement('script');
             script2.src = "scripts/track.js";
             head.appendChild(script2);
         }
@@ -29,6 +31,7 @@
 
     <script src="scripts/script.js"></script>
     <script src="scripts/particles.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 
 </head>
 
@@ -67,10 +70,12 @@
             </ul>
             <a href="javascript:void(0);" class="menu_icon" onclick="toggleNav()">
                 <img src="images/menu.svg" alt="Menu" width="30">
+
             </a>
         </nav>
 
         <header>
+
             <div id="particles-js"></div>
             <div class="titleBorder wide_letters">
 
@@ -119,40 +124,61 @@
     </div>
     <hr />
     <div class="featured_work">
-        <a href="/ecojam.html">
+        <a href="/">
             <h2 class="montserrat_font_title glow_text" style="margin-left: 50px;">Featured</h2>
         </a>
-        <div href="/ecojam.html" class="featured_card">
-            <a href="/ecojam.html">
+        <div href="/" class="featured_card">
+            <a href="/">
 
-                <img class="featured_instagram" src="images/ecoJamImage.jpg" alt="">
+                <img class="featured_instagram" src="images/video.gif" alt="">
             </a>
             <div class="featured_video">
 
                 <h3 class="hidden montserrat_font_title underline purp_font">Promo</h3>
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ZbfPZqxdnnjJkVQS" title="YouTube video player"
-                    frameborder="0" allow="autoplay; encrypted-media" referrerpolicy="no-referrer-when-downgrade"
-                    allowfullscreen></iframe>
 
+                <!-- <iframe src="https://www.youtube.com/embed/44SZBhbuk_E?si=sFeYRETC_LpGVd_F" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
+                <h3 class="montserrat_font_title purp_font">Description</h3>
+                <p class="description">🔥Dance Battle & Open Mic🔥
+                    </br>
+
+                    Join us and @collabarts.pgh on May 4th from 8 - 11 PM at Trace Brewing for a dope dance battle
+                    sponsored by Level Up Studios. Showcase your moves or tune in as we host an open mic featuring
+                    the best in hip-hop and R&B.
+
+                    </br>
+                    </br>
+                    📍 Location: Trace Brewing
+                    </br>
+                    ⏰ Time: 8 - 11 PM
+                    </br>
+                    📅 Date: May 4th
+                    </br>
+                    💰 Entrance: FREE
+                    </br>
+
+                    Don’t miss out - mark your calendars, bring your friends, and let’s make it a night to remember!
+                    </br>
+                    </br>
+
+                    Follow @rhythm.and.threads for more updates and surprises!
+                </p>
 
                 <div>
 
-                    <h3 class="montserrat_font_title purp_font">Description</h3>
-                    <p class="description">Collab Arts At Pitt presents Eco-Village,<br /><br /> A
-                        sustainability-oriented
-                        district at
-                        the Rhythm and Threads @rhythm.and.threads festival.<br /><br /> Eco-Jam is a creative reuse
-                        festival featuring
-                        live street art, thrift & art pop-ups, performances, skate and music. Come celebrate
-                        collaborative
-                        arts and making art from junk with us! RSVP now via link in our bio.
-                    </p>
+                    <div class="ryt" style="display: flex">
+                        <img width="33%" height="400px" src="images/threads0.jpg" alt="">
+                        <img width="33%" height="400px" src="images/threads1.jpg" alt="">
+                        <img width="33%" height="400px" src="images/threads2.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="featured_items hidden">
+    <!-- <div class="featured_items hidden">
         <div>
             <h3 class="montserrat_font_title purp_font">FAQs:</h3>
             <p>
@@ -180,8 +206,8 @@
             </p>
 
         </div>
-    </div>
-    <h3 class="montserrat_font featured_more_info">more info <span class="carat">⌄</span></h3>
+    </div> -->
+    <!-- <h3 class="montserrat_font featured_more_info">more info <span class="carat">⌄</span></h3> -->
 
 
     <div class="hidden">
@@ -249,7 +275,7 @@
                 <a href="https://discord.com/channels/1047821326733291520/1047821326733291523">
                     <img style="margin-right: 20px;" width="40" src="/images/discord.png" alt="instagram">
                 </a>
-                <a href="https://www.youtube.com/watch?v=vf_b7blo_yE">
+                <a href="https://youtu.be/44SZBhbuk_E?si=Hx0CVvmIQKfZZXSj">
                     <img width="40" src="/images/youtube.png" alt="instagram">
                 </a>
             </div>
@@ -263,26 +289,25 @@
                 E2 6QQ<br>
             </p> -->
             <p>
-                <b>Drop Us a line</b><br>
+                <b>DROP US A LINE</b><br>
                 +1 412 425 2799<br>
                 collaborativeartspgh@gmail.com<br>
             </p>
         </div>
 
-        <form action="#" method="post">
+        <form method="POST" id="get_involved_form">
             <h2>Join Our Mailing List</h2>
-            <!-- <label for="name">Name:</label> -->
-            <input placeholder="Email" type="text" id="name" name="name" required autocomplete="name">
+            <input type="hidden" name="access_key" value="f77b6205-7e3f-4893-bb6c-1c5d03a4efc4">
+
+            <input placeholder="Name" type="text" id="name" name="name" required>
 
             <br>
-            <!-- <label for="email">Email:</label> -->
-            <input placeholder="Name" type="email" id="email" name="email" required autocomplete="email">
+            <input placeholder="Email" type="email" id="email" name="email" required>
 
-            <!-- <label for="message">Message:</label> -->
-            <!-- This text area uses javascript to expand and contract depending on the amount of content inside of it. -->
-            <!-- <textarea class="form_text_area" rows="1" id="message" name="message"></textarea> -->
+            <div class="h-captcha" data-captcha="true"></div>
             <br>
             <button type="submit"><span>Sign Up</span></button>
+            <div id="result"></div>
         </form>
     </footer>
 

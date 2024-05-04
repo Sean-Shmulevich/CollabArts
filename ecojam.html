@@ -9,6 +9,7 @@
     </style>
 
     <script src="scripts/script.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </head>
 
 
@@ -56,14 +57,15 @@
         <div href="/project.html" class="featured_card">
             <a href="/projects.html">
 
-                <img class="featured_instagram" src="images/ecoJamImage.jpg" alt="">
+                <img class="featured_instagram" src="images/postponed.jpg" alt="">
             </a>
             <div class="featured_video">
 
                 <h3 class="hidden montserrat_font_title underline purp_font">Promo</h3>
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ZbfPZqxdnnjJkVQS" title="YouTube video player"
-                    frameborder="0" allow="autoplay; encrypted-media" referrerpolicy="no-referrer-when-downgrade"
-                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/44SZBhbuk_E?si=sFeYRETC_LpGVd_F" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
@@ -86,7 +88,7 @@
     <div class="featured_items">
         <div>
             <h3 class="montserrat_font_title purp_font">FAQs:</h3>
-            <p>
+            <p style="text-decoration: line-through;">
                 When and where?
                 <br />
                 Date: April 12th
@@ -127,7 +129,7 @@
                 <a href="https://discord.com/channels/1047821326733291520/1047821326733291523">
                     <img style="margin-right: 20px;" width="40" src="/images/discord.png" alt="instagram">
                 </a>
-                <a href="https://www.youtube.com/watch?v=vf_b7blo_yE">
+                <a href="https://youtu.be/44SZBhbuk_E?si=Hx0CVvmIQKfZZXSj">
                     <img width="40" src="/images/youtube.png" alt="instagram">
                 </a>
             </div>
@@ -141,26 +143,25 @@
                 E2 6QQ<br>
             </p> -->
             <p>
-                <b>Drop Us a line</b><br>
+                <b>DROP US A LINE</b><br>
                 +1 412 425 2799<br>
                 collaborativeartspgh@gmail.com<br>
             </p>
         </div>
 
-        <form action="#" method="post">
+        <form method="POST" id="get_involved_form">
             <h2>Join Our Mailing List</h2>
-            <!-- <label for="name">Name:</label> -->
-            <input placeholder="Email" type="text" id="name" name="name" required>
+            <input type="hidden" name="access_key" value="f77b6205-7e3f-4893-bb6c-1c5d03a4efc4">
+
+            <input placeholder="Name" type="text" id="name" name="name" required>
 
             <br>
-            <!-- <label for="email">Email:</label> -->
-            <input placeholder="Name" type="email" id="email" name="email" required>
+            <input placeholder="Email" type="email" id="email" name="email" required>
 
-            <!-- <label for="message">Message:</label> -->
-            <!-- This text area uses javascript to expand and contract depending on the amount of content inside of it. -->
-            <!-- <textarea class="form_text_area" rows="1" id="message" name="message"></textarea> -->
+            <div class="h-captcha" data-captcha="true"></div>
             <br>
             <button type="submit"><span>Sign Up</span></button>
+            <div id="result"></div>
         </form>
     </footer>
 </body>
