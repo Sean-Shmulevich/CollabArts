@@ -330,11 +330,11 @@ h1 {
   width: fit-content;
   padding-inline: 40px;
   height: 310px;
-  border-color: rgba(255, 255, 255, 0.4);
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 999px;
-  background-color: rgba(195, 191, 191, 0.087);
+  /* border-color: rgba(255, 255, 255, 0.4); */
+  /* border-style: solid; */
+  /* border-width: 5px; */
+  /* border-radius: 999px; */
+  /* background-color: rgba(195, 191, 191, 0.087); */
 }
 
 /*=============================================
