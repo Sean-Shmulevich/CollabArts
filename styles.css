@@ -328,7 +328,6 @@ h1 {
   max-width: 80vw;
 
   width: fit-content;
-  padding-inline: 40px;
   height: 310px;
   /* border-color: rgba(255, 255, 255, 0.4); */
   /* border-style: solid; */
@@ -832,7 +831,7 @@ input.stv-radio-tab:checked + label {
 }
 
 .wide_letters {
-  letter-spacing: 1.55rem;
+  letter-spacing: 2ch;
 }
 
 .block {
